@@ -1,4 +1,4 @@
-* {
+    * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -50,7 +50,7 @@
 
 #xd {
     -webkit-column-count: 2;
-    column-gap: normal;
+    column-gap: 40px;
 }
 
 .content p {
@@ -73,3 +73,9 @@
         height: auto;
     }
 }
+
+@media (max-width: 600px) {
+    .fullscreen-bg {
+        /* instead show the poster image stretched to fill the screen */
+        background: url('lmao2.png') center center / cover no-repeat;
+    }
